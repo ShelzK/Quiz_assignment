@@ -1,0 +1,179 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+}
+
+form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Times New Roman', serif;
+}
+
+form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+
+#dashboard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+#dashboard h1 {
+    font-size: 24px;
+    font-family: 'Times New Roman', serif;
+}
+
+#dashboard h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+#dashboard button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+    font-family: 'Times New Roman', serif;
+}
+
+#dashboard button:hover {
+    background-color: #2980b9;
+}
+
+
+#quiz {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+#quiz h1 {
+    font-size: 24px;
+    font-family: 'Times New Roman', serif;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+}
+
+.question input[type="text"] {
+    width: calc(100% - 22px);
+    font-family: 'Times New Roman', serif;
+}
+
+.question input[type="radio"] {
+    margin-right: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #dashboard {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #quiz {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form select,
+    form button {
+        font-size: 16px;
+    }
+}

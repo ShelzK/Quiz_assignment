@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="dashboard">
+        <h1>Dashboard</h1>
+        <button onclick="logout()">Logout</button>
+
+        <div id="quiz-section">
+            <h2>View Quiz Scores</h2>
+            <button onclick="viewScores()">View Scores</button>
+            <div id="scores-list" style="display: none;"></div>
+        </div>
+
+        <div id="create-quiz-section">
+            <h2>Create a Quiz</h2>
+            <form id="quiz-form">
+                <input type="text" id="quiz-title" placeholder="Quiz Title" required>
+                <div id="questions-container">
+                    <div class="question">
+                        <input type="text" placeholder="Question" required>
+                        <select class="question-type" onchange="updateQuestionType(this)">
+                            <option value="text">Text Answer</option>
+                            <option value="multiple-choice">Multiple Choice</option>
+                        </select>
+                        <div class="options-container" style="display: none;">
+                            <input type="text" placeholder="Option 1">
+                            <input type="text" placeholder="Option 2">
+                            <input type="text" placeholder="Option 3">
+                            <input type="text" placeholder="Option 4">
+                            <select class="correct-option">
+                                <option value="">Select Correct Option</option>
+                            </select>
+                        </div>
+                        <input type="text" class="correct-answer" placeholder="Correct Answer (text only)" style="display: none;">
+                    </div>
+                </div>
+                <button type="button" onclick="addQuestion()">Add Another Question</button>
+                <button type="button" onclick="createQuiz()">Create Quiz</button>
+            </form>
+        </div>
+
+        <div id="quiz-links-section">
+            <h2>Your Quizzes</h2>
+            <div id="quiz-links-list"></div>
+        </div>
+
+        <div id="all-scores-section">
+            <h2>All Scores for Your Quizzes</h2>
+            <div id="all-scores-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
